@@ -1,0 +1,44 @@
+.menu .header .icon {
+	font-size: 18px;
+}
+
+.container.main {
+	margin-top: 7.0em;
+}
+
+.ui.breadcrumb a {
+    color: teal;
+}
+
+.ui.breadcrumb a:hover {
+    color: teal;
+	text-decoration: underline;
+}
+
+.ui.breadcrumb a.active {
+    color: black;
+}
+
+#delete-form {
+	display: inline;
+}
+
+.show .meta {
+	margin: 10px 0;
+	font-size: 1em;
+    line-height: 1em;
+    color: rgba(0,0,0,.6);
+}
+
+.item-buttons {
+	margin-top: 15px;
+	width: 100%;
+}
+
+.item-buttons .button {
+	width: 20%;
+}
+
+.index .more-link {
+	margin-top: 10px;
+}

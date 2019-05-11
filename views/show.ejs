@@ -1,0 +1,44 @@
+<% include ./partials/header %>
+
+
+<div class="ui main text container show">
+
+	
+	<div class="ui breadcrumb">
+	  <a class="section" href="/">Home</a>
+	  <i class="right angle icon divider"></i>
+	  <a class="active section">Show</a>
+	</div>
+
+	
+	<div class="ui segment">
+		
+		
+		<h2 class="ui header">
+			<%= blog.title %>
+		</h2>
+
+		<img src="<%= blog.image %>" class="ui centered rounded image">
+
+		<div class="content">
+			<div class="meta date">
+				<%= moment(blog.created).format("MMM D, YYYY @ H:mm A") %>
+			</div>
+			<div class="description">
+				<%- blog.body %>
+			</div>
+		</div>
+
+		<form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST" id="delete-form">
+			<div class="item-buttons ui">
+				<a href="/blogs/<%= blog._id %>/edit" class="ui teal button">Edit</a>
+				<button type="submit" class="ui red button">Delete</button>
+			</div>
+		</form>
+
+	</div>
+	
+</div>
+
+
+<% include ./partials/footer %>
